@@ -24,11 +24,14 @@ public class Lengthofline {
         double a= len.CheckLine();
         System.out.println("Write coordinates of 2nd Line");
         double b=len.CheckLine();
-        if (a == b){
-            System.out.println("Both Lines are equal");
+        if (a > b){
+            System.out.println("First Line is greater");
         }
-        else {
-            System.out.println("Both Lines are not equal");
+        else if(a < b){
+            System.out.println("Second Line is greater");
+        }
+        else{
+            System.out.print("Both lines are equal");
         }
 
 
